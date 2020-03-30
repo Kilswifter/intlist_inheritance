@@ -72,7 +72,11 @@ public class LinkedIntList extends IntList {
 	}
 	
 	/**
-	 * Initializes this object so that it stores an empty sequence of integers.
+	 * Initializes this object so that it stores an empty sequence of values.
+	 * 
+	 * @mutates | this
+	 * 
+	 * @post | getSize() == 0
 	 */
 	public LinkedIntList() {
 		sentinel = new Node();
